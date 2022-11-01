@@ -6,10 +6,6 @@ if [ "$(whoami)" != "root" ]; then
     exec sudo -- "$0" "$@"
 fi
 
-NPROC=$(nproc)
-echo $NPROC
-
-
 inputVersion=$1
 if [[ $inputVersion == "" ]]; then
     echo "Desteklenen bir sürüm girmelisiniz (e.g. 2.7.11, 3.5.1)"
