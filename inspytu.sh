@@ -29,7 +29,7 @@ setNameAndURL() {
 pythonDependencies() {
     /usr/bin/apt-get update -q
     /usr/bin/apt-get install build-essential checkinstall -qqy || exitOnError $?
-    /usr/bin/apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -qqy
+    /usr/bin/apt-get install libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev -qqy
 }
 
 installPip() {
